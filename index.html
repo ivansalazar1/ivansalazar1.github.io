@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iván Salazar</title>
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/elestilo.css"> 
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/aos.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+
+   
+</head>
+<body>
+    <a name="inicio"></a>
+    <div style="position: fixed; bottom: 20px; right: 20px; z-index:10; font-size:2rem;">
+        <a href="#inicio"><button class="btn btn-success fa fa-arrow-up"></button></a>
+    </div>
+	<header style="background-color: #ffd966; text-align:center; padding:10px">
+		<span style="font-size:48px; color:#666699; line-height:40px"><b>iván</b> SALAZAR</span><br>
+		<span style="font-size:17px; color:#666699;">INFORMÁTICO &amp; DISEÑADOR GRÁFICO</span>
+    </header>
+	<nav class="navbar navbar-expand-lg navbar-dark navbar-azul">  <!-- bg-dark -->
+		<!--<a class="navbar-brand" href="#"><img src="milogo.png" height="50px" alt=""></a>-->
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="#">Inicio</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#formacion" >Formación</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#habilidades">Habilidades</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#experiencia" data-mdb-smooth-scroll="smooth-scroll">Experiencia</a> </li>
+				<li class="nav-item"> <a class="nav-link" href="#herramientas">Herramientas</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#distinciones">Distinciones</a> </li>
+				<!-- <li class="nav-item"> <a class="nav-link" href="#">Portafolio</a> </li> -->
+			</ul>
+		</div>
+	</nav>
+
+
+    <!-- MODAL MODAL MODAL MODAL -->
+    <div id="mimodal" class="mimodal">
+        <div class="mimodal-container">
+            <div style="width:100%; text-align:end;">
+                <span class="mimodal-close fa fa-close" style="font-size:30px;" 
+                    onclick="mimodal.classList.remove('mimodal-show')"> </span>
+            </div>
+            <img id="imagen" alt="" class="mimodal-img"> 
+        </div>
+    </div>
+
+
+    <!-- ACERCA -->
+    <section style="padding:30px 0;" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-4 text-center">				
+                    <img src="yo42.jpg" class="rounded-circle" width="250" alt="Iván Salazar">
+                </div>
+                <div class="col-md-8">
+                    <h2 class="subtitulo">acerca de mi</h2>
+                    <p style="text-align: center; padding: 20px 30px; font-style: italic; ">
+                    Mi objetivo profesional es pertenecer a una institución donde me desenvuelva plenamente en 
+                    el <b>área de informática</b> brindando soluciones y aportando conocimientos, siempre con
+                    ganas de aprender nuevas tecnologías e implementarlas en beneficio general.
+                    <br><br>Me considero una persona con iniciativa, adaptable al entorno 
+                    <br>y facilidad de trabajo en equipo. 
+                    </p>				
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CUALIDADES -->
+    <section style="padding:30px 0px; background-color:#dfdfe3; ">
+        <div class="container">
+            <div class="row" >
+                <div class="col-6 col-md-3 col-sm-3 text-center">
+                    <img src="images/persona-calidad.jpg" class="rounded-circle" width="120" alt="">
+                    <br>proactivo
+                </div>
+                <div class="col-6 col-md-3 col-sm-3 text-center">
+                    <img src="images/persona-cliente.jpg" class="rounded-circle" width="120" alt="">
+                    <br>creativo
+                </div>
+                <div class="col-6 col-md-3 col-sm-3 text-center">
+                    <img src="images/persona-cumplir.jpg" class="rounded-circle" width="120" alt="">
+                    <br>analítico
+                </div>
+                <div class="col-6 col-md-3 col-sm-3 text-center">
+                    <img src="images/persona-equipo.jpg" class="rounded-circle" width="120" alt="">
+                    <br>resiliente
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FORMACION -->
+    <a name="formacion"></a> 
+    <section style="padding:30px 0px; background-color:#666699;">
+        <div class="container">		
+            <div class="row">
+                <div class="col-md-4" style="margin-bottom:20px" >
+                    <div class="formac-bloque" data-aos="fade-right">
+                        <h2 class="subtitulo" style="color:#e1e1e1;">formación</h2>
+                        <b>secundaria</b>
+                        <div class="formac-items">
+                            <div class="formac-vineta fa fa-angle-double-right"></div>
+                            <div style="display:table-cell;">
+                                <p class="formac-donde">Instituto Americano (1994) </p>
+                            </div>
+                            <div class="formac-boton">
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento" 
+                                    onclick="abrirModal('certs/A_formacion01-amerinst.jpg')">
+                                </button>
+                            </div>
+                        </div>
+                        <b>técnico</b>
+                        <div class="formac-items">
+                        <div style="display:table-row">
+                            <div class="formac-vineta fa fa-angle-double-right"></div>
+                            <div style="display:table-cell;">
+                                Programador de Sistemas
+                                <p class="formac-donde">C.E.C. (1997) </p>
+                            </div>
+                            <div class="formac-boton">
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                    onclick="abrirModal('certs/A_formacion02-cec.jpg')">
+                                </button>
+                            </div>
+                        </div>
+                        <div style="display: table-row;">
+                            <div class="formac-vineta fa fa-angle-double-right"></div>
+                            <div style="display:table-cell;">
+                                Diseñador Gráfico
+                                <p class="formac-donde">Instituto Atenea (2011)</p>
+                            </div>
+                            <div class="formac-boton">
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                    onclick="abrirModal('certs/A_formacion03-dg.jpg')"></button>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                        <b>superior</b>
+                        <div class="formac-items">
+                            <div class="formac-vineta fa fa-angle-double-right"></div>
+                            <div style="display:table-cell;">
+                                Informática
+                                <p class="formac-donde">U.M.S.A. (2021) </p>
+                            </div>
+                            <div class="formac-boton">
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                    onclick="abrirModal('certs/A_formacion04-umsa.jpg')">
+                                </button>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="formac-bloque" data-aos="fade-left">
+                        <h2 class="subtitulo"  style="color:#e1e1e1;">capacitación 
+                            <span style="font-size: 1rem;">(relevante)</span>
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <b>cursos</b>
+                                <div class="formac-items">
+                                    <div style="display:table-row;">
+                                        <div class="formac-vineta fa fa-angle-double-right"></div>
+                                        <div style="display:table-cell">
+                                            Java con Base de Datos
+                                            <p class="formac-donde">LASIN-UMSA (May/2005) <b>20 hrs</b></p>
+                                        </div>
+                                        <div class="formac-boton">
+                                            <button class="btn btn-outline-success fa fa-file-text-o" title="Documento" 
+                                                onclick="abrirModal('certs/B_curso03-java.jpg')"></button>
+                                        </div>
+                                    </div>
+                                    <div style="display:table-row;">
+                                        <div class="formac-vineta fa fa-angle-double-right"></div>
+                                        <div style="display:table-cell;">
+                                            Visual Basic .NET
+                                            <p class="formac-donde">LASIN-UMSA (Dic/2006) <b>30hrs</b></p>
+                                        </div>
+                                        <div class="formac-boton">
+                                            <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                                onclick="abrirModal('certs/B_curso04-vbasic.jpg')"></button>
+                                        </div>
+                                    </div>
+                                    <div style="display:table-row;">
+                                        <div class="formac-vineta fa fa-angle-double-right"></div>
+                                        <div style="display:table-cell;">Identidad Visual Corporativa
+                                                <p class="formac-donde">Inst. Atenea (Sep/2012) <b>120 hrs</b></p>
+                                        </div>
+                                        <div class="formac-boton">
+                                            <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                                onclick="abrirModal('certs/B_curso06-identidadvisual.jpg')"></button>
+                                        </div>
+                                    </div>
+                                    <div style="display:table-row;">
+                                        <div class="formac-vineta fa fa-angle-double-right"></div>
+                                        <div style="display:table-cell;">
+                                            Diseño y Edición Multimedia
+                                            <p class="formac-donde">Inst. Atenea (Jul/2013) <b>120hrs</b></p>
+                                        </div>
+                                        <div class="formac-boton">
+                                            <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                                onclick="abrirModal('certs/B_curso07-multimedia.jpg')"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <b>conferencias</b>
+                                <div class="formac-items">
+                                    <div style="display:table-row;">
+                                        <div class="formac-vineta fa fa-angle-double-right"></div>
+                                        <div style="display:table-cell;">
+                                            3er Congreso de Diseño Gráfico “Identidad Visual”
+                                            <p class="formac-donde">Inst. Atenea (Oct/2010) <b>22hrs</b></p>
+                                        </div>
+                                        <div class="formac-boton">
+                                            <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                                onclick="abrirModal('certs/B_seminario04-identidadvisual.jpg')"></button>
+                                        </div>
+                                    </div>
+                                    <div style="display:table-row;">
+                                        <div class="formac-vineta fa fa-angle-double-right"></div>
+                                        <div style="display:table-cell;">
+                                            4to Congreso de Diseño Gráfico “Diseño e Impresión”
+                                            <p class="formac-donde">Inst. Atenea (Oct/2012) <b>22hrs</b></p>
+                                        </div>
+                                        <div class="formac-boton">
+                                            <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                                onclick="abrirModal('certs/B_seminario05-impresion.jpg')"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <a name="habilidades"></a> 
+    <section style="padding:30px 0px; background-color:aaafe3; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="habil-contenido" data-aos="zoom-in-down">
+                        <p class="habil-titulo">habilidades</p>
+                        <div class="habil-grid">
+                            <div>
+                                <img src="images/ic-conduccion.png" class="habil-icono" alt="Conducción"> 
+                                <br>Cat. "A"
+                            </div>
+                            <div>
+                                <img src="images/ic-bricolaje.png" class="habil-icono" alt="Bricolaje">
+                                <br>Bricolaje 
+                            </div>
+                            <div>
+                                <img src="images/ic-diseno.png" class="habil-icono" alt="Diseño">
+                                <br>Diseño Gráfico 
+                            </div>
+                            <!--
+                            <div>
+                                <img src="images/ic-multimedia.png" class="habil-icono" alt="Multimedia">
+                            </div>
+                            <div>Multimedia</div>
+                                -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="habil-contenido" data-aos="zoom-in-down" data-aos-delay="300">
+                        <p class="habil-titulo">intereses</p>
+                        <div class="habil-grid">
+                            <div>
+                                <img src="images/ic-historia.png" class="habil-icono" alt="Conducción"> 
+                                <br>Historia
+                            </div>
+                            <div>
+                                <img src="images/ic-ajedrez.png" class="habil-icono" alt="Bricolaje">
+                                <br>Ajedrez
+                            </div>
+                            <div>
+                                <img src="images/ic-lectura.png" class="habil-icono" alt="Diseño">
+                                <br>Lectura
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="habil-contenido" data-aos="zoom-in-down" data-aos-delay="600">
+                    <p class="habil-titulo">aficiones</p>
+                        <div class="habil-grid">
+                            <div>
+                                <img src="images/ic-natacion.png" class="habil-icono" alt="Natación"> 
+                                <br>Natación
+                            </div>
+                            <div>
+                                <img src="images/ic-excursion.png" class="habil-icono" alt="Excursiones">
+                                <br>Excursión
+                            </div>
+                            <div>
+                                <img src="images/ic-guitarra.png" class="habil-icono" alt="Guitarra">
+                                <br>Guitarra
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-md-12">
+                    <div class="habil-contenido" data-aos="zoom-in-down" data-aos-delay="900">
+                        <p class="habil-titulo">idiomas</p>
+                        <div class="row">
+                        <div class="col-md-4">
+                            <div style="display: table; width: 100%;">
+                                <div style="display:table-cell; width: 30%;">Inglés:</div>
+                                <div style="display:table-cell">
+                                    <div class="idioma-barra">
+                                        <div class="idioma-nivel" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="display: table; width: 100%;">
+                                <div style="display:table-cell; width: 30%;">Aymara:</div>
+                                <div style="display:table-cell;">
+                                    <div class="idioma-barra">
+                                        <div class="idioma-nivel" style="width:50%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div style="display: table; width: 100%;">
+                                <div style="display:table-cell; width: 30%;">Quechua:</div>
+                                <div style="display:table-cell;">
+                                    <div class="idioma-barra">
+                                        <div class="idioma-nivel" style="width:20%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EXPERIENCIA -->
+    <a name="experiencia"></a>
+    <div style="padding:30px 0px; background-color:#c0c0c0; ">
+        <div class="container">
+            <h2 class="subtitulo">experiencia</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" data-aos="flip-left">
+                        <div class="panel panel-default"> <!--busa-->
+                            <div class="panel-heading" role="tab" id="heading12">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                        href="#collapse12" aria-expanded="false">
+                                        <div style="display: table;">
+                                            <div class="panel-numero">12</div>
+                                            <div class="panel-cabeza">
+                                                Programador de Proyectos de Negocios
+                                                <p class="txt-donde">Banco Unión</p>
+                                                <p class="txt-cuando">Oct/2021 - Ene 2022</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                                <div class="panel-body">								
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Desarrollo de funcionalidades para el sistema de cartera (C#) </li>
+                                            <li>Administración de base de datos brindado asistencia al área de cartera a nivel nacional.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral14-bcounion_programador.jpg')"></button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>						
+                        <div class="panel panel-default"> <!--dde-->
+                            <div class="panel-heading" role="tab" id="heading11">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                        href="#collapse11" aria-expanded="false">
+                                        <div style="display: table;">
+                                            <div class="panel-numero">11</div>
+                                            <div class="panel-cabeza">
+                                                Técnico de Redes y Base de Datos<br>
+                                                <p class="txt-donde">Dirección Departamental de Educación </p>
+                                                <p class="txt-cuando">Jun/2020 - Nov 2020</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse11" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading11">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Administración LAN y DataCenter (Linux,Windows) </li>
+                                            <li>Desarrollo de módulos complementarios en los sistemas establecidos. (PHP, SQL server)</li>
+                                            <li>Responsable de seguridad en software (base de datos y sistemas) y hardware (terminales, LAN)</li>
+                                            <li>Implementación wifi, VPN, telefonía IP.</li>
+                                            <li>Reestructuración del cableado de red y soporte técnico a funcionarios dirigiendo un equipo de pasantes.	</li>	
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral13-dde_tecnicoredes.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--ascinalss -->
+                            <div class="panel-heading" role="tab" id="heading10">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse10" aria-expanded="false">
+                                        <div style="display: table;">
+                                            <div class="panel-numero">10</div>
+                                            <div class="panel-cabeza">
+                                                Analista Desarrollador Web<br>
+                                                <p class="txt-donde">Asociación Nacional de Suboficiales y Sargentos</p>
+                                                <p class="txt-cuando">Dic/2018 - Feb/2020</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Sistemas web de Contabilidad, Facturación, Activos Fijos, Almacenes, RRHH, Hotelería Nacional. (Laravel, VueJS, MySQL)</li>
+                                            <li>Aplicación móvil con información de servicios hoteleros y difusión de actividades. (Java, FireBase).</li>
+                                            <b>Soporte Técnico:</b>
+                                            <li>Configuración de seguridad en terminales, políticas de acceso y seguridad a redes física y wifi.</li>
+                                            <li>Apoyo HelpDesk a los funcionarios.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral12-ascinalss_desarrollador.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--freelance-->
+                            <div class="panel-heading" role="tab" id="heading09">
+                                <h4 class="panel-title"> 
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                        href="#collapse09" aria-expanded="false" >
+                                        <div style="display: table;">
+                                            <div class="panel-numero">09</div>
+                                            <div class="panel-cabeza">
+                                                Servicios por cuenta propia<br>
+                                                <p class="txt-donde">Modalidad freelance</p>
+                                                <p class="txt-cuando">Ene/2018 - Dic/2018</p>
+                                            </div>
+                                        </div>
+                                    </a> 
+                                </h4>
+                            </div>
+                            <div id="collapse09" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading09">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Diseño de sitios web y diseño gráfico en general.</li>
+                                            <li>Desarrollo de sistemas informáticos.</li>
+                                            <li>Soporte técnico en computadoras, impresoras y cibercafés.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--wlh-->
+                            <div class="panel-heading" role="tab" id="heading08">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse08" aria-expanded="false">
+                                        <div style="display: table;">
+                                            <div class="panel-numero">08</div>
+                                            <div class="panel-cabeza">
+                                                Diseñador Gráfico<br>
+                                                <p class="txt-donde">Imprenta "GRAKICA WLH"</b>
+                                                    <br>Ene/2017 - Dic/2017</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse08" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading08">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Diseño de la línea gráfica para clientes: logotipo, colorética, tipografías.</li>
+                                            <li>Diseño de elementos impresos: almanaques, trípticos, carpetas, libros, revistas.</li>
+                                            <li>Armados pre-prensa.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral11-imprenta_disenador.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--mintransp-->
+                            <div class="panel-heading" role="tab" id="heading07">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                        href="#collapse07" aria-expanded="false">
+                                        <div style="display: table;">
+                                            <div class="panel-numero">07</div>
+                                            <div class="panel-cabeza">
+                                                Pasantía en Sistemas<br>
+                                                <p class="txt-donde">Ministerio de Transparencia Institucional</p>
+                                                <p class="txt-cuando">Jul/2016 - Dic/2016</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse07" class="panel-collapse collapse " role="tabpanel" aria-labelledby="heading07">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Desarrollo del sistema de seguimiento de contratos</li>
+                                            <li>Configuración hardware y software del DataCenter</li>
+                                            <li>Administración de red: cableado, configuración, cuentas de usuario, telefonía IP</li>
+                                            <li>Mantenimiento preventivo y correctivo de PCs y laptops.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral10-mintransparencia.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">			  
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" data-aos="flip-right" data-aos-delay="300">
+                        <div class="panel panel-default"> <!--dechali-->
+                            <div class="panel-heading" role="tab" id="heading06">
+                                    <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse06" aria-expanded="false">
+                                        <div style="display: table">
+                                            <div class="panel-numero">06</div>
+                                            <div class="panel-cabeza">
+                                                Diseñador Gráfico y Desarrollador<br>
+                                                <p class="txt-donde">DECHALI Marketing & Sistemas</p>
+                                                <p class="txt-cuando">Jul/2015 - Dic/2015</p>
+                                            </div>
+                                        </div>					
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse06" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading06">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Desarrollo del sistema de organización de documentos digitalizados.</li>
+                                            <li>Diseño de la línea gráfica institucional: logotipo, tipografías, carpetas, volantes, trípticos, membretes.</li>
+                                            <li>Diseño y desarrollo del sitio web empresarial.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral09-dechali_disenador.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--mmaya-->
+                            <div class="panel-heading" role="tab" id="heading05">
+                                    <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse05" aria-expanded="false">
+                                        <div style="display: table">
+                                            <div class="panel-numero">05</div>
+                                            <div class="panel-cabeza">
+                                                Pasantía en Sistemas<br>
+                                                <p class="txt-donde">Ministerio de Medio Ambiente </p>
+                                                <p class="txt-cuando">Sep/2014 - Mar/2015</p>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse05" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading05">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Soporte Técnico a funcionarios</li>
+                                            <li>Administración de Red: Montaje físico del DataCenter, cableado estructurado, configuración de cuentas de usuario, telefonía IP.</li>
+                                            <li>Políticas de seguridad y acceso a servicios, Active Directory, acceso remoto en PCs y laptops</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"				
+                                            onclick="abrirModal('certs/C_laboral08-minaguas.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--atenea-->
+                            <div class="panel-heading" role="tab" id="heading04">
+                                    <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse04" aria-expanded="false">
+                                        <div style="display: table">
+                                            <div class="panel-numero">04</div>
+                                            <div class="panel-cabeza">
+                                                Responsable de Informática<br>
+                                                <p class="txt-donde">Instituto Atenea</p>
+                                                <p class="txt-cuando">Abr/2004 - Ene/2014</p>
+                                            </div>
+                                        </div>										
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse04" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading04">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Coordinador de procesos y proyectos informáticos.</li>
+                                            <li>Desarrollo de sistemas administrativo, académico, contable (PHP-MySQL-JQuery)</li>
+                                            <li>Administrador de seguridad en Base de Datos</li>
+                                            <b>Infraestructura:</b>
+                                            <li>Organización de red: cableado estructurado, IPs, acceso WiFi y seguridad.</li>
+                                            <li>Co-responsable de mantenimiento, configuración de seguridad y software en equipos PC y Mac.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral05-atenea_informatico.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--docente-->
+                            <div class="panel-heading" role="tab" id="heading03">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse03" aria-expanded="false">
+                                        <div style="display: table">
+                                            <div class="panel-numero">03</div>
+                                            <div class="panel-cabeza">Docente<br>
+                                                <p class="txt-donde">Instituto Atenea</p>
+                                                <p class="txt-cuando">Feb/2000 - Ene/2014</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse03" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading03">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Docente de Diseño y Desarrollo web, Soft Contable</li>
+                                            <li>Producción de manuales y guías de ejercicios en Office, Desarrollo Web y Soft Contable.</li>
+                                            <li>Apoyo al equipo de Diseño Gráfico en la creación de piezas gráficas publicitarias.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral04-atenea_docente.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--computron-->
+                            <div class="panel-heading" role="tab" id="heading02">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse02" aria-expanded="false">
+                                        <div style="display:table">
+                                            <div class="panel-numero">02</div>
+                                            <div class="panel-cabeza">Docente<br>
+                                            <p class="txt-donde">Computron</p>
+                                            <p class="txt-cuando">Ene/1999 - Jul/2000</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse02" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading02">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Elaboración de programas de avance pedagógico.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral02-computron_docente.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default"> <!--apoyo-->
+                            <div class="panel-heading" role="tab" id="heading01">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" 
+                                    href="#collapse01" aria-expanded="false">
+                                        <div style="display: table">
+                                            <div class="panel-numero">01</div>
+                                            <div class="panel-cabeza">Encuestador y Editor<br>
+                                                <p class="txt-donde">Apoyo Opinión y Mercado</p>
+                                                <p class="txt-cuando">Oct/1997 - Sep/1998</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading01">
+                                <div class="panel-body">
+                                    <div class="panel-lista">
+                                        <ul>
+                                            <li>Realización de encuestas de campo.</li>
+                                            <li>Validación de datos en el centro de cómputo.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="panel-boton">
+                                        <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                            onclick="abrirModal('certs/C_laboral01-apoyo_encuestador.jpg')"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>						
+                    </div>
+                </div>
+            </div>	
+        </div>
+    </div>
+
+
+    <!-- HERRAMIENTAS -->
+    <a name="herramientas"></a>
+    <div style="padding:30px 0px; ">    
+        <div class="container" >
+            <h2 class="subtitulo">herramientas</h2>
+            <div class="row">
+                <div class="col-md-3" >
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-backend.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">backend</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">PHP</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">C#</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">Java</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">.NET</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">Laravel</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">SpringBoot</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                            <div class="herram-item">Python</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" >
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-frontend.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">frontend</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">Java  Script</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">Vue JS</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">React</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">Angular</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-db.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">base de datos</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">MySQL</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">SQL Server</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">Postgres</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">Oracle</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">MongoDB</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:40%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-dweb.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">diseño web</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">HTML/CSS</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">Dreamw</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">Bootstrap</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">Wordpress</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                            <div class="herram-item">SASS</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-so.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">sistemas operativos</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">Windows</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">Linux</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">Mac OS</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-infra.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">infraestructura</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">Cableado</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:95%"></div></div>
+                            <div class="herram-item">Data Center</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:85%"></div></div>
+                            <div class="herram-item">Telefonía IP</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:70%"></div></div>
+                            <div class="herram-item">Video Vigil</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:70%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-office.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">ofimática</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">Excel</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">Access</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:90%"></div></div>
+                            <div class="herram-item">Outlook</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">Power BI</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                            <div class="herram-item">Workspace</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:80%"></div></div>
+                            <div class="herram-item">SAP</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="herram-contenido">
+                        <p class="centro"><img src="images/herr-dgrafico.png" class="herram-icono" alt=""></p>
+                        <p class="herram-titulo">diseño gráfico</p>
+                        <div class="herram-grid">
+                            <div class="herram-item">Photoshop</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:95%"></div></div>
+                            <div class="herram-item">Illustrator</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:85%"></div></div>
+                            <div class="herram-item">Indesign</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:85%"></div></div>
+                            <div class="herram-item">Premiere</div>
+                            <div class="herram-barra"><div class="herram-nivel" style="width:50%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- DISTINCIONES -->
+    <a name="distinciones"></a>
+    <div style="padding:30px 0px; background-color:#e1f1e1; ">
+        <div class="container">
+            <h2 class="subtitulo">distinciones</h2>
+            <div class="row">
+                <div class="col-md-6" >
+                    <div class="dist-contenedor">
+                        <div class="dist-vineta">
+                            <img src="images/ic-premio.png" class="dist-icono">
+                        </div>
+                        <div style="display:table;">
+                            <div class="dist-cuerpo">
+                                Diploma a la Excelencia Educativa
+                                <p class="txt-donde">Instituto Atenea</p>
+                                <p class="txt-cuando">Abril 2001</p>
+                            </div>
+                            <div class="dist-boton">
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                    onclick="abrirModal('certs/E_reconocim01-atenea.jpg')">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="dist-contenedor">
+                        <div class="dist-vineta">
+                            <img src="images/ic-premio.png" class="dist-icono">
+                        </div>
+                        <div style="display:table;">
+                            <div class="dist-cuerpo">
+                                Reconocimiento a la Lealtad y Constancia por el Día del Maestro 
+                                <p class="txt-donde">Instituto Atenea</p>
+                                <p class="txt-cuando">Junio 2013</p>
+                            </div>
+                            <div class="dist-boton">
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                    onclick="abrirModal('certs/E_reconocim02-atenea.jpg')">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" >
+                    <div class="dist-contenedor">
+                        <div class="dist-vineta">
+                            <img src="images/ic-premio.png" class="dist-icono">
+                        </div>
+                        <div style="display:table;">
+                            <div class="dist-cuerpo">
+                                Certificado de Rendimiento Académico <!-- en la asignatura “Sistemas Contables” -->
+                                <p class="txt-donde">UMSA - Facultad de Ciencias Puras</p>
+                                <p class="txt-cuando">Diciembre 2015</p>
+                            </div>
+                            <div class="dist-boton">
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                onclick="abrirModal('certs/E_reconocim03-umsa.jpg')"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dist-contenedor">
+                        <div class="dist-vineta">
+                            <img src="images/ic-premio.png" class="dist-icono">
+                        </div>
+                        <div style="display:table;">
+                            <div class="dist-cuerpo">
+                                Memorándum de Felicitación por el desarrollo del Sistema Contable 
+                                <p class="txt-donde">Asociación Nacional de Suboficiales y Sargentos</p>
+                                <p class="txt-cuando">Julio 2019</p>
+                            </div>
+                            <div class="dist-boton">                                
+                                <button class="btn btn-outline-success fa fa-file-text-o" title="Documento"
+                                    onclick="abrirModal('certs/E_reconocim04-ascinalss.jpg')">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+<style>
+    .pie-grid{
+        display: grid; grid-template-columns: 20px auto; grid-template-rows: repeat(3,1fr); gap: 20px;
+    }
+    .pie-icono{
+        font-size:1.4rem; color: #fff;
+    }
+</style>
+    <!-- PIE DE PAGINA -->
+    <footer style="padding:30px 0px; background-color:#242424; ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="pie-grid">
+                        <div class="pie-icono fa fa-id-card"></div>
+                        <div style="color:#e1e1e1">Iván Salazar Rodríguez</div>
+                        <div class="pie-icono fa fa-home"></div>
+                        <div style="color:#e1e1e1">Av. La Bandera Nro 60 - Villa Pabón</div>
+                        <div class="pie-icono fa fa-flag"></div>
+                        <div style="color:#e1e1e1">La Paz - Bolivia</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p style="text-align:center; font-size: 1.5rem; color:#e1f1e1">(+591)78909060
+                    <br><img src="images/ic-whatsapp.png" width="35" alt=""></p>
+                </div>
+                <div class="col-md-4">
+                    <div class="pie-grid">
+                        <div class="pie-icono fa fa-globe"></div>
+                        <div style="color:#e1e1e1">www.portafoliobollati.com/ivansalazar</div>
+                        <div class="pie-icono fa fa-envelope"></div>
+                        <div style="color:#e1e1e1">ivancho.sr@gmail.com</div>
+                        <div class="pie-icono fa fa-linkedin-square"></div>
+                        <div style="color:#e1e1e1">linkedin.com/in/ivansalazar77</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script> 
+        const abrirModal=(archivo)=>{
+            imagen.src=archivo;
+            mimodal.classList.add('mimodal-show');
+        }
+    </script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+    <script src="/js/aos.js"></script>
+    <script src="/js/wow.js"></script>
+    <script> new WOW().init(); </script>
+    <script>AOS.init({duration:1000});</script>
+</body>
+</html>
