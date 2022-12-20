@@ -9,10 +9,7 @@
 @font-face {
 	font-family: 'FontAwesome';
 	src: url('../css/font-awesome.css');
-		/*url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
-		url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), */
   }	
-
 
 :root{
 	--amarillo:#ffd966;
@@ -20,12 +17,25 @@
 	--verde: #22aa44;
 }
 
-body{
-	font-family: 'century gothic';
-}
 html{
 	scroll-behavior: smooth;
 }
+
+body{
+	font-family: 'century gothic';
+	font-size:16px;
+}
+
+.botonarriba {
+	position: fixed; bottom: 10px; right: 15px; z-index:90; font-size:2rem;
+}
+
+.botonwhats {
+	position: fixed; bottom: 10px; left: 15px; z-index:80; font-size:2rem;
+}
+
+
+p{padding: 0; margin: 0;}
 
 .centro {
 	text-align: center; margin: 0; 
@@ -39,8 +49,21 @@ html{
 	color:#669;	
 }
 
-#botonarriba {
-	z-index: 100;
+.acerca{
+	text-align: center; padding: 20px 30px; font-style: italic;
+}
+
+.head-contenedor{
+	background-color: var(--amarillo); 
+	text-align:center; 
+	font-size:48px; 
+	color:var(--grisazul); 
+	line-height:normal;
+	padding: 10px;
+}
+
+.head-subtitulo{
+	font-size:17px;
 }
 
 .txt-donde{
@@ -146,6 +169,10 @@ html{
 }
 .navbar-azul .navbar-link:hover {
 	color: #ecdbff;
+}
+.navbar-milogo{
+	height: 45px; width: 45px; background-color:#fff; border-radius: 50%; 
+    display: flex; align-items: center; justify-content: center;
 }
 
 @media (max-width: 767px) {
@@ -378,3 +405,24 @@ a:hover, a:focus {
     display:table-cell; vertical-align: bottom; padding: 10px; 
 }
 
+
+.pie-icono{
+	font-size:1.5rem; color: #fff; display: table-cell; padding: 10px;
+}
+.pie-texto{
+	color: #e1e1e1;  display: table-cell;
+}
+.pie-titulo{
+	font-size:1.2rem; font-weight:bold; color:#e1e1e1; padding-bottom:0px;
+}
+.pie-logocontenedor {
+	display: flex; justify-content: center; margin-top: -80px;
+}
+.pie-logo {
+	background-color:#fff; 
+	width: 100px; height: 100px; 
+	display: flex; 
+	justify-content: center; 
+	padding: 15px; 
+	border-radius: 50%;
+}
