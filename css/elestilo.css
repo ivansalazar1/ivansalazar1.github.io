@@ -15,6 +15,7 @@
 	--amarillo:#ffd966;
 	--grisazul:#666699;
 	--verde: #22aa44;
+	--casiblanco: #e1e1e1;
 }
 
 html{
@@ -27,12 +28,20 @@ body{
 }
 
 .botonarriba {
-	position: fixed; bottom: 10px; right: 15px; z-index:90; font-size:2rem;
+	position: fixed; bottom: 10px; right: 30px; z-index:90; font-size: 1.5rem;
+}
+.botonwhats {
+	position: fixed; bottom: 10px; left: 15px; z-index:80; 
 }
 
-.botonwhats {
-	position: fixed; bottom: 10px; left: 15px; z-index:80; font-size:2rem;
+.botonenlace{
+	border-radius:50%; 
+	padding: 10px 12px; 
+	background-color: #0F70B7; 
+	
+	color:#fff555;
 }
+.botonenlace:visited{color: #fff;}
 
 
 p{padding: 0; margin: 0;}
@@ -414,7 +423,7 @@ a:hover, a:focus {
 	color: #e1e1e1;  display: table-cell;
 }
 .pie-titulo{
-	font-size:1.2rem; font-weight:bold; color:#e1e1e1; padding-bottom:0px;
+	font-size:1.2rem; font-weight:bold; color: var(--casiblanco); padding-bottom:0px;
 }
 .pie-logocontenedor {
 	display: flex; justify-content: center; margin-top: -80px;
@@ -426,4 +435,7 @@ a:hover, a:focus {
 	justify-content: center; 
 	padding: 15px; 
 	border-radius: 50%;
+}
+.pie-enlace {
+	text-decoration: none; color: var(--casiblanco);
 }
